@@ -1,0 +1,47 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+ 
+</head>
+<body>
+
+
+<ol data-draggable="target">
+    <li id="king" data-draggable="item"><img src="items/king.png" height="30%"></li>
+    <li data-draggable="item"><img src="items/doll.png" height="30%"></li>
+    <li data-draggable="item"><img src="items/cake.png" height="30%"></li>
+    <div id="results"></div>
+</ol>
+
+<ol data-draggable="target">
+      <li data-draggable="item"><h2>KIng</h2></li>
+    
+</ol>
+
+<ol data-draggable="target">
+      <li data-draggable="item"><h2>Cake</h2></li>
+    
+</ol>
+
+<ol data-draggable="target">
+      <li data-draggable="item"><h2>Doll</h2></li>
+</ol>
+
+<script>
+var coordinates = function(element) {
+    element = $(element);
+    var top = element.position().top;
+    var left = element.position().left;
+    $('#results').text('X: ' + left + ' ' + 'Y: ' + top);
+}
+
+
+</script>
+<script src="main.js"></script>
+</body>
+</html>
